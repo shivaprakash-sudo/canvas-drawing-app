@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+:root {
+    --theme-color: #f009;
+}
+
+*,
+::after,
+ ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 0.5em;
+    word-spacing: 10px;
+}
+
+body {
+    font-size: 16px;
+}
+
+main {
+    padding: 1em;
+    flex-direction: column;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.75em 1em;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 1px 1px 10px #000;
+    background: var(--theme-color);
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.slider {
+    cursor: pointer;
+    appearance: none;
+    background: #3333;
+    height: 10px;
+    opacity: 0.8;
+    transition: opactiy 0.3s;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-transition: opactiy 0.3s;
+    -moz-transition: opactiy 0.3s;
+    -ms-transition: opactiy 0.3s;
+    -o-transition: opactiy 0.3s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--theme-color);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--theme-color);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+/* #color-picker {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+} */
+
+.canvas-container {
+    margin-top: 1rem;
+    border: 3px solid brown;
+}
+
+#canvas:hover {
+    cursor: url(/resources/pencil.svg), pointer;
+}

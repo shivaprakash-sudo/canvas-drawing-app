@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/script.js"></script>
+
+    <title>Canvas Draw</title>
+</head>
+
+<body>
+
+    <main class="d-flex">
+        <h1>Canvas Draw</h1>
+        <section class="section">
+            <div class="d-flex buttons">
+                <div class="d-flex">
+                    <div class="d-flex slider-container">
+                        <label for="line-width">Line width</label>
+                        <input type="range" min="1" max="10" value="3" name="line-width" id="line-width" class="slider">
+                    </div>
+                    <div class=" d-flex btn-color">
+                        <label for="color-picker">Pick a color</label>
+                        <input id="color-picker" type="color" name="color-picker" id="">
+                    </div>
+                </div>
+                <div>
+                    <button id="reset-btn" class="btn">Reset Canvas</button>
+                </div>
+            </div>
+            <div class="canvas-container">
+                <canvas id="canvas">
+                    Your browser doesn't support the HTML tag
+                </canvas>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
