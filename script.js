@@ -1,5 +1,3 @@
-"use strict";
-
 window.addEventListener("load", () => {
     const canvas = document.querySelector("#canvas");
     const ctx = canvas.getContext("2d");
@@ -56,7 +54,7 @@ window.addEventListener("load", () => {
         ctx.moveTo(pos.x, pos.y);
     }
 
-    // event listeners
+    // event listeners for desktop
     canvas.addEventListener("mousedown", paint);
     canvas.addEventListener("mousemove", draw);
     canvas.addEventListener("mouseup", stopPaint);
@@ -92,11 +90,11 @@ window.addEventListener("load", () => {
     // gets mouse pointer position by caluclating the 
     // relation between canvas bitmap and canvas element dimensions
     function getMousePosition(canvas, e) {
-        // abs. size of element
+        // absolute size of the canvas element
         let rect = canvas.getBoundingClientRect();
-        // relationship bitmap vs. element for X
+        // relationship between bitmap and element for X
         let scaleX = canvas.width / rect.width;
-        // relationship bitmap vs. element for Y
+        // relationship between bitmap and element for Y
         let scaleY = canvas.height / rect.height;
 
         return {
