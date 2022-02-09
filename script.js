@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
     const ctx = canvas.getContext("2d");
 
     canvas.width = window.innerWidth * 0.90;
-    canvas.height = window.innerHeight * 0.90;
+    canvas.height = window.innerHeight * 0.70;
 
     // clearn canvas on reset button click
     const reset_btn = document.querySelector("#reset-btn");

@@ -13,13 +13,9 @@
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 0.5em;
     word-spacing: 10px;
-}
-
-body {
-    font-size: 16px;
 }
 
 main {
@@ -29,7 +25,7 @@ main {
 
 .d-flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -115,4 +111,22 @@ main {
 
 #canvas:hover {
     cursor: url(/resources/pencil.svg), pointer;
+}
+
+@media (max-width:700px) {
+    html {
+        font-size: 14px;
+    }
+    .buttons {
+        text-align: left;
+    }
+    .buttons,
+    .slider-and-color {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .slider,
+    .color-picker {
+        margin: 1em;
+    }
 }
